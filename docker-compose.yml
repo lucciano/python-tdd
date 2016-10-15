@@ -1,0 +1,10 @@
+version : "2"
+
+services:
+  shell:
+     build: .
+     environment:
+       - DISPLAY=${DISPLAY}
+     volumes:
+       - .:/home/developer
+       - /tmp/.X11-unix:/tmp/.X11-unix
